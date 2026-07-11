@@ -1,0 +1,28 @@
+:root {
+  --ink: #1F1410;
+  --ink-soft: #2B1B14;
+  --paper: #FBF6EC;
+  --paper-alt: #F3EAD8;
+  --gold: #C98A2C;
+  --gold-dark: #A66F1F;
+  --sage: #6B7B4F;
+  --wine: #6B2737;
+  --text: #3A2A20;
+  --muted: #8A7A6B;
+  --line: #E2D5BC;
+  --shadow: 0 10px 30px -12px rgba(31, 20, 16, 0.35);
+
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Manrope', system-ui, -apple-system, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, Consolas, monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
