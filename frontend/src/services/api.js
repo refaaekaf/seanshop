@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-baseURL: 'https://seanshop-r39d.vercel.app/api',
+  baseURL: 'https://seanshop-r39d.vercel.app/api',
 });
 
 API.interceptors.request.use((config) => {
