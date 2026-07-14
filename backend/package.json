@@ -1,22 +1,21 @@
 {
-  "name": "backend",
-  "version": "1.0.0",
+  "name": "seanshop-backend",
+  "version": "2.0.0",
+  "description": "Backend API untuk SeanShop E-Commerce dengan Autentikasi JWT",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "bcryptjs": "^3.0.3",
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^4.19.2",
     "jsonwebtoken": "^9.0.3",
-    "mongodb-memory-server": "^11.2.0",
-    "mongoose": "^9.7.4"
+    "mongoose": "^8.24.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
