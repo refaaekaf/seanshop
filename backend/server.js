@@ -9,7 +9,12 @@ const orderRoutes = require('./routes/orderRoutes');
 const app = express();
 
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174', 'https://toko-online-lab-one.vercel.app'],
+  origin: [
+    'http://localhost:5173', 
+    'http://localhost:5174', 
+    'https://toko-online-lab-one.vercel.app',
+    'https://seanshop-phi.vercel.app' 
+  ],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
