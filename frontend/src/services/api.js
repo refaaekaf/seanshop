@@ -14,7 +14,7 @@ API.interceptors.request.use((config) => {
 
 export const getProducts = () => API.get('/products');
 export const getProductById = (id) => API.get(`/products/${id}`);
-export const seedSampleProducts = () => API.post('/products/seed'); 
+export const seedSampleProducts = () => API.post('/products/seed');
 
 export const registerUser = (data) => API.post('/auth/register', data);
 export const loginUser = (data) => API.post('/auth/login', data);
