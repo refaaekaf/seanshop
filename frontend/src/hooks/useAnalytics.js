@@ -1,17 +1,18 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import ReactGA from 'react-ga4';
 
-const useAnalytics = () => {
+function useAnalytics() {
   const location = useLocation();
 
   useEffect(() => {
-    ReactGA.initialize("G-FMQRR01H53");
-  }, []);
-
-  useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: location.pathname + location.search });
+    
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'page_view', {
+        page_path: location.pathname + location.search,
+        page_title: document.title,
+      });
+    }
   }, [location]);
-};
+}
 
 export default useAnalytics;
